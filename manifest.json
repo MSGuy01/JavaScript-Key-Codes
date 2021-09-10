@@ -4,13 +4,8 @@
 	"author": "MSGuy01",
 	"description": "Shows you the JavaScript key code for any key pressed on your keyboard",
 	"version": "1.0",
-	"icons": {
-		"16": "images/16.png",
-		"48": "images/48.png",
-		"128": "images/128.png"
-	},
 	"browser_action": {
 		"default_popup": "popup.html",
 		"default_title": "JavaScript Key Codes"
-	},
+	}
 }
