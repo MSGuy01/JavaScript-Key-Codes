@@ -1,4 +1,11 @@
+if (localStorage.getItem("key")) {
+    displayKey();
+}
 document.addEventListener("keydown", function(e) {
-    document.getElementById("text").style.color = "black";
-    document.getElementById("text").innerHTML = e.keyCode;
+    localStorage.setItem("key", e.keyCode + " (" + e.key + ")");
+    displayKey();
 });
+function displayKey() {
+    document.getElementById("text").style.color = "red";
+    document.getElementById("text").innerHTML = localStorage.getItem("key");
+}
